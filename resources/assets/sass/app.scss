@@ -1,14 +1,77 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+html, body {
+  background-color: #ddd;
+  color: #636b6f;
+  font-family: $font-family-sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
+  font-size: 14px;
+}
+
+#dark-loader {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.tweetbox form {
+  background: #ccc;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  display: grid;
+  height: 145px;
+}
+
+.timeline {
+  background: #fff;
+  padding: 20px;
+  height: calc(100vh - 225px);
+}
+
+textarea {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.tweet {
+  display: grid;
+  grid-template-columns: 100px auto;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background: dodgerblue;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px;
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.username {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.avatar {
+  border-radius: 40px;
 }
